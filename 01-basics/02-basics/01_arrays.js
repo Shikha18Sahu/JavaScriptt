@@ -39,3 +39,5 @@ console.log(typeof newArr);
 
 // console.log(arr.splice(1, 3)); // ['b', 'c', 'd'] → Yeh remove ho gaye
 // console.log(arr);              // ['a', 'e'] → Original change ho gaya
+
+
