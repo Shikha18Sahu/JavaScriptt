@@ -20,24 +20,24 @@ console.log(typeof newArr);
 
 //slice, splice
 
-// console.log("A ", myArr); 
+console.log("A ", myArr); 
 
-// const myn1 = myArr.slice(1,3)
+const myn1 = myArr.slice(1,3)
 
-// console.log(myn1);
-// console.log("B ", myArr);
+console.log(myn1);
+console.log("B ", myArr);
 
-// const myn2 = myArr.slice(1,3)
+const myn2 = myArr.splice(1,3)
 
-// console.log(myn2);
-// console.log("C ", myArr);
+console.log(myn2);
+console.log("C ", myArr);
 
-// let arr = ["a", "b", "c", "d", "e"];
+let arr = ["a", "b", "c", "d", "e"];
 
 // console.log(arr.slice(1, 4));  // ['b', 'c', 'd'] → Naya array bana
 // console.log(arr);              // ['a', 'b', 'c', 'd', 'e'] → Original same hai
 
-// console.log(arr.splice(1, 3)); // ['b', 'c', 'd'] → Yeh remove ho gaye
-// console.log(arr);              // ['a', 'e'] → Original change ho gaya
+ console.log(arr.splice(1, 3)); // ['b', 'c', 'd'] → Yeh remove ho gaye
+ console.log(arr);              // ['a', 'e'] → Original change ho gaya
 
 
