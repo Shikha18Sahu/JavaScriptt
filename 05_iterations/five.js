@@ -1,3 +1,6 @@
+//++++++++++++++++++++++ foreach +++++++++++++++++++++++++++++++++++++++
+
+
 const coding = ["js", "ruby", "java" , "py", "cpp"]
 
 coding.forEach( function (item) {
@@ -5,12 +8,12 @@ coding.forEach( function (item) {
 } )
 
 coding.forEach( (item)=> {
-  // console.log(item);
+  console.log(item);
   
 })
 
 function printMe(item){
-  console.log(item);
+  // console.log(item);
 }
 
 // coding.forEach(printMe);  //give only refrence not execute
@@ -42,6 +45,6 @@ const myCoding = [
 
 myCoding.forEach( (item)=> {
   
-   console.log(item.languageName)
+  //  console.log(item.languageName)
 })
 
