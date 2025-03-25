@@ -1,3 +1,9 @@
+// ++++++++++++++++ NodeList and HTMLCollection ++++++++++++++++++++
+
+
+
+
+
 // <!DOCTYPE html>
 // <html lang="en">
 // <head>
