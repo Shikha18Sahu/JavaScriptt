@@ -12,9 +12,7 @@ DOM Tree ek hierarchical structure hota hai jisme HTML document ke elements ko n
 Root Node: Har DOM tree ka root node <html> hota hai.
 Child Nodes: Uske baad saare HTML elements child nodes hote hain, jaise <head>, <body>, <div>, <p>, etc.
 Example:
-html
-Copy
-Edit
+
 <html>  
   <head>...</head>  
   <body>...</body>  
@@ -26,6 +24,8 @@ Answer:
 
 Hum DOM se HTML ke saare elements ko access kar sakte hain jaise headings (<h1>, <h2>, etc.), paragraphs (<p>), classes, IDs, buttons, forms, links, etc.
 Methods to access HTML elements:
+
+
 getElementById("id") → Specific element ko access karne ke liye.
 getElementsByClassName("class") → Class name se elements ko access karne ke liye.
 querySelector("selector") → CSS selector ka use karke element ko access karte hain.
@@ -36,14 +36,18 @@ Answer:
 
 DOM Manipulation ka matlab hai HTML document ke elements ko add, remove, ya modify karna bina page ko reload kiye.
 Examples:
+
 Adding Elements:
 createElement("element") → Naya element create karte hain.
 appendChild() → Naye element ko document mein add karte hain.
+
 Removing Elements:
 removeChild() → Existing element ko remove karte hain.
+
 Modifying Elements:
 innerHTML → Element ke andar ka content modify karte hain.
 style → CSS properties ko change karte hain.
+
 5. DOM Events
 Question: DOM Events kya hote hain, aur hum unhe kaise handle karte hain?
 Answer:

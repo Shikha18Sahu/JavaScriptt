@@ -7,22 +7,22 @@
 // console.dir(document)   // all information jo chupi hon 
 
 // dom tree: 
--Window
-  - Document
-    - html
-      - head
-        - title
-          - "Sample DOM Tree"
-      - body
-        - h1
-          - "Welcome to My Page"
-        - p
-          - "This is a paragraph."
-        - div
-          - p
-            - "Another paragraph in a div."
-          - button
-            - "Click Me"
+// -Window
+//   - Document
+//     - html
+//       - head
+//         - title
+//           - "Sample DOM Tree"
+//       - body
+//         - h1
+//           - "Welcome to My Page"
+//         - p
+//           - "This is a paragraph."
+//         - div
+//           - p
+//             - "Another paragraph in a div."
+//           - button
+//             - "Click Me"
 
 
  console.log(DocumentFragment.baseURI)

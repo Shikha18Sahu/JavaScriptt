@@ -1,0 +1,46 @@
+<!-- XMLHTTP Request instead of fetch -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body style ="background-color: #212121;">
+
+
+
+</body>
+  <script>
+    const requestUrl =  'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+      console.log(xhr.readyState);
+      if(xhr.readyState === 4){
+        const data = JSON.parse(this.responseText)
+        console.log(typeof data);
+        console.log(data.followers);
+      }
+    }
+    xhr.send()
+
+  </script>
+
+ </html>
+
+
+ <!-- ✔ URL store kiya (Kaha se data lena hai?)
+✔ XMLHttpRequest object banaya (Request ka setup kiya)
+✔ "GET" request bheji (Server se data maanga)
+✔ Response receive kiya & JSON me convert kiya
+✔ Request send kiya & console me output print kiya -->
+
+
+
+
+<!-- 
+xhr.readyState === 4 ka Matlab Kya Hai?
+🔹 Jab bhi aap XMLHttpRequest se API request bhejte hain, uska status alag-alag steps me change hota hai.
+🔹 readyState ek number hota hai jo request ka current state batata hai.
+🔹 Jab readyState === 4 hota hai, iska matlab hai request complete ho gayi aur server se response a gaya. -->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- clearInterval() ka use setInterval() se chalu kiya gaya interval ko stop karne ke liye hota hai. Jab aap setInterval() use karte hain, toh ek function repeatedly ek fixed interval ke baad execute hota rahta hai. Agar aap use manually stop nahi karenge, toh woh infinite chalta rahega. -->
+</head>
+<body>
+  <h1>Chai aur Javascript</h1>
+  <button id = "stop">Stop</button>
+  <button id = "start">Start</button>
+
+</body>
+
+<script>
+  let intervalId;
+
+  const sayShikha = function (){
+    console.log("Hey Shikha")
+  }
+
+
+  document.querySelector('#start').
+  addEventListener('click', function(){
+if(!intervalId){
+  intervalId = setInterval(sayShikha, 500)
+}
+});
+
+  document.querySelector('#stop').addEventListener('click',function(){
+  clearInterval(intervalId)
+  console.log("Stopped")
+  });
+</script>
+</html>

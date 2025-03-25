@@ -1,0 +1,14 @@
+//  Default JavaScript :- Synchronous=> ek code execute hoga then another one 
+//               Single threaded language
+
+// ExecutionContext :- execute one line  of code at a time
+//  console.log ->1
+//  console.log ->2
+ 
+//  in a asingle thread , each operation waits for the last one to complete before executing
+//  call stack , memeory heap
+
+
+ //Blocking Code vs Non Blocking Code
+ block the flow of Program-> read file Synchronous
+ Doesn't block execution -> read file async

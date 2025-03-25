@@ -1,56 +1,65 @@
-// var c = 300
-let a = 200
+// // var c = 300
+// let a = 200
 
-if (true) {
-  let a = 10
-  const b = 20 
- c = 3000
-//  console.log("INNER", a);
+// if (true) {
+//   let a = 10
+//   const b = 20 
+//  c = 3000
+// //  console.log("INNER", a);
+// }
+
+// //++++++++++++ block space, global space ++++++++++++++++++++++++++++++  
+
+// // console.log(a);
+// // console.log(b);
+// // console.log(c);
+
+// //Nested Scope
+
+// function one(){   // smjhna hai 
+//   const username = "shikha"
+
+//   function two(){
+//     const website = "Youtube"
+//     // console.log(username);
+//   }
+//   // console.log(website);
+
+//   two()
+// }
+
+// // one()
+
+// if(true){
+//   const username= "Shikha"
+//   if(username==="Shikha"){
+//     const website = " youtube"
+//     // console.log(username + website);
+//   }
+//   // console.log(website);
+// }
+// // console.log(username);
+
+
+
+// // ++++++++++++++++  interesting  +++++++++++++++++++
+// console.log(addone(5))
+// function addone(num){
+//          return num + 1
+// }
+
+
+// console.log(addTwo(5))
+// const addTwo = function (num){
+//   return num +2
+// }
+
+function addTwoNumbers(number1, number2){  //parameters
+  console.log(number1 + number2)
 }
 
-//++++++++++++ block space, global space ++++++++++++++++++++++++++++++  
-
-// console.log(a);
-// console.log(b);
-// console.log(c);
-
-//Nested Scope
-
-function one(){   // smjhna hai 
-  const username = "shikha"
-
-  function two(){
-    const website = "Youtube"
-    // console.log(username);
-  }
-  // console.log(website);
-
-  two()
-}
-
-// one()
-
-if(true){
-  const username= "Shikha"
-  if(username==="Shikha"){
-    const website = " youtube"
-    // console.log(username + website);
-  }
-  // console.log(website);
-}
-// console.log(username);
-
-
-
-// ++++++++++++++++  interesting  +++++++++++++++++++
-console.log(addone(5))
-function addone(num){
-         return num + 1
-}
-
-
-console.log(addTwo(5))
-const addTwo = function (num){
-  return num +2
-}
-
+addTwoNumbers(0,0)                //arguement
+addTwoNumbers(null, null)
+addTwoNumbers(3,0)
+addTwoNumbers(4, "50")
+addTwoNumbers("4",4)
