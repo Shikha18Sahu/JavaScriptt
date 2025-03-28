@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style = "background-color: #313131;">
+  <button id="orange">Orange</button>
+  <button id="green">Green</button>
+  
+  <script>
+    //Lexical Scoping-> inner fnction ke pas outer function ka scope hota hai 
+
+    // function init(){
+    //     let name = "Mozilla";
+    //     function displayName(){
+    //       console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init()
+
+    // function outer(){
+    //   let username = "shikha"
+    //   console.log("OUTER", secret); //not defined
+    //   function inner(){
+    //     let secret = "my234"
+    //     console.log("inner", username);
+    //   }
+    //   function innerTwo(){
+    //     console.log(secret);  //not defined
+    //     console.log("innerTwo", username);
+    //   }
+    //   inner()
+    //   innerTwo()
+    //   // console.log("shikha");
+    // }
+    // outer()
+    // console.log("too outer", username);
+
+    //closure
+
+    function makeFunc(){
+      const name = "Mozilla";
+      function displayName(){
+        console.log(name);
+      }
+      return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+
+    //jb aap pure function return kr dete ho to sirf funciton hi return nai hota blki pura lexical scope return hota hai
+
+
+  </script>
+  <script>
+    // document.getElementById("orange").onclick =function(){
+    //   document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick =function(){
+    //   document.body.style.backgroundColor = `green`}
+
+      function clickHandler(color){
+      // document.body.style.backgroundColor = `${color}`
+      return function(){
+        document.body.style.backgroundColor = `${color}`  //closure
+      }
+      }
+
+      document.getElementById('orange').onclick = clickHandler("orange")
+      document.getElementById('green').onclick = clickHandler("green")
+
+      
+  </script>
+</body>
+</html>

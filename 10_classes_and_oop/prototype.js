@@ -71,3 +71,9 @@ String.prototype.trueLength = function(){
 anotherUsername.trueLength()
 "hitesh".trueLength()
 "shikhasahu".trueLength()
+
+
+Theory: 
+
+
+Jab bhi aap JavaScript me ek object ya function create karte hain, JavaScript uske sath ek hidden property attach karta hai, jise [[Prototype]] kehte hain. Is [[Prototype]] property me ek reference hota hai kisi aur object ka, jo us object ke methods ya properties ko inherit kar sakta hai.
