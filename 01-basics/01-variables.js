@@ -4,7 +4,7 @@ var accountPassword= "jaipur"
 accountCity= "Allahabad"
 let accountState;
 
-// accountId= 2
+// accountId= 2 // now allowed
 
 accountEmail="shivam@gg"
 accountCity="Bengaluru"
