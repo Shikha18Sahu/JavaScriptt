@@ -15,17 +15,22 @@ let state; // undefined
 let state= null; // 0 
 
 //PRimitive Datatypes
+// store in stack memory where copy of original re created , changes are not affected to the original one 
 
-// number => range: 2 to pwer 53
-// bigint
-// string => ""
-// boolean => true/ false
-// null => standalone value
-// undefined => abhi value assigned nai hui hai
-// symbol => unique
+number => range: 2 to pwer 53
+bigint
+string => ""
+boolean => true/ false
+null => standalone value
+undefined => abhi value assigned nai hui hai
+symbol => unique
 
 // Non Primitive(reference) Datatypes
-// object // array // function
+// store in heap memory where changes are affected to the original one 
+
+object {}
+array []
+function  (){}
 
 console.log(typeof null);  //Object  // a historical bug in JavaScript.
 console.log(typeof arr);  //Object  
