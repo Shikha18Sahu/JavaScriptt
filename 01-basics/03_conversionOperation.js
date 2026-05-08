@@ -91,11 +91,16 @@ console.log(+true);  //1
 console.log(+"");  //0
 
 let num1, num2, num3
-
 num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 // ++gameCounter;   //101
 gameCounter++;   //101
-    
-console.log(gameCounter);
+console.log(gameCounter);  //101
+
+// but NOte:
+
+let gameCounter = 100
+console.log(gameCounter++); // 100 
+console.log(++gameCounter); // 101
+
