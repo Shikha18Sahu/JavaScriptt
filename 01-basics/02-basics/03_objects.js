@@ -1,7 +1,30 @@
-//singleton-- cunstructor se
+//singleton-- 
 //Object.create
+// object literals and constructors
 
-// object literals
+// Object LIteral : 
+const user = {
+   name: "Shikha",
+   age: 20
+};
+
+// cunstructor
+function Student(name, age){
+   this.name = name;
+   this.age = age;
+}
+const s1 = new Student("Shikha", 20);
+const s2 = new Student("Rahul", 21);
+
+//singleton 
+const principal = {
+   name: "Mr. Sharma"
+};
+
+//Object literals directly create a single object using {} syntax,
+// while constructors are used to create multiple objects with similar structure using the new keyword. 
+//A singleton means only one instance of an object exists throughout the application.
+
 const mySym = Symbol("key1")
 const JsUser = {
     name: "Shikha",
