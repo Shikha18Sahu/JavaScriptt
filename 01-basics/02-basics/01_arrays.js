@@ -1,36 +1,35 @@
-//array
-
+//-------------   array declaration  -------------
+const arr = [0,1,2,3,4, true, "shikha"] // can contain A MIX of different datatypes. 
 const myArr = [0,1,2,3,4,5]
 const myHeroes = ["shaktiman", "naagraj"]
 const myArr2= new Array(1,2,3,4)
-console.log(myArr[1]);
+console.log(myArr[1]);  //1
+//shallow copy- properties share the same reference ----- original array will change
+// deep copy - properties do not share the same reference   ---- does not effect on original array
 
-// Array Methods
+//------------- Array Methods  -------------
+myArr.push(6) // [0, 1, 2, 3, 4, 5, 6]
+myArr.pop()   // [0, 1, 2, 3 ,4, 5]
+myArr.unshift(4) //  [4, 0, 1, 2, 3,4 , 5]   shift all element to right side
+myArr.shift()  //  [ 0, 1, 2, 3, 4 ,5]    remove first element (shift)
+console.log(myArr.includes(0))  // true;   // boolean type
 
-// myArr.push(6)
-// myArr.pop()
-// myArr.unshift(4)
-// myArr.shift()
-// console.log(myArr.includes(0))
+const newArr = myArr.join()  //bind the array and convert it to strings  
+console.log(myArr);  // 0, 1, 2, 3, 4, 5
+console.log(typeof newArr);  // string
 
-const newArr = myArr.join()  //bind the array and convert it to strings
-console.log(myArr);
-console.log(typeof newArr);
+// ----------Important--------------  (slice, splice)   ----------Important--------------
 
+console.log("A ", myArr);  // A [1, 2, 3, 4, 5]
 
-//slice, splice
+const myn1 = myArr.slice(1,3)  
+console.log("B ", myArr);  // B [ 0,1 ,2 ,3, 4, 5]
+console.log(myn1);  //  [1,2]
 
-console.log("A ", myArr); 
+const myn2 = myArr.splice(1,3) //  [1,2,3]
+console.log("C ", myArr);   // C [0, 4, 5]
+console.log(myn2); // [0, 4, 5]
 
-const myn1 = myArr.slice(1,3)
-
-console.log(myn1);
-console.log("B ", myArr);
-
-const myn2 = myArr.splice(1,3)
-
-console.log(myn2);
-console.log("C ", myArr);
 
 let arr = ["a", "b", "c", "d", "e"];
 
