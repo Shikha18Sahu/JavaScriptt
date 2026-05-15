@@ -23,36 +23,40 @@ function one(){   // smjhna hai
     const website = "Youtube"
     console.log(username);
   }
-  console.log(website);
+  console.log(website);  // undefined 
 
-  two()
+  two() // shikha
 }
+one();  // not execute
 
-// one is a home and two is a room ... room vala ghr ke andr ka sb dekh skta hai bt home room ki private nhi dekh skta ...
+// one is a big(home) and two is a child( room )... room vala ghr ke andr ka sb dekh skta hai bt home room ki private nhi dekh skta ...
 
 if(true){
   const username= "Shikha"
   if(username==="Shikha"){
     const website = " youtube"
-    // console.log(username + website);
+    // console.log(username + website);  // print
   }
-  // console.log(website);
+  // console.log(website);   // undefined
 }
-// console.log(username);
+// console.log(username);  // undefined
 
 
 
 // ++++++++++++++++  interesting  +++++++++++++++++++
-console.log(addone(5))
+
+// function declaration
+console.log(addone(5))  // execute and print  6
 function addone(num){
          return num + 1
 }
 
+ // function expression
+console.log(addTwo(5)) // undefined do not use before declaration
+const addTwo = function (num){
+  return num +2
+}   
 
-
-// const addTwo = function (num){
-//   return num +2
-// }   //7
 function addTwo(num){
    return num + 2
 }
