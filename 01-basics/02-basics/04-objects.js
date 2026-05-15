@@ -53,12 +53,19 @@ const course ={
 }
 
 //course.courseInstructor  like very long and ajeeb so
-
+//Object Destructing : JavaScript feature that allows extracting properties from objects into variables in
+//a cleaner and shorter way. Properties can also be renamed while destructuring.
 const {courseInstructor} = course 
 console.log(courseInstructor)  //Shikha
 const {courseInstructor: Instructor} = course 
 console.log(Instructor)  //Shikha
 
+
+//in react 
+const navbar = ({company}) =>{
+  
+}
+navabar(company = "shikha")
 
 // API in object form
 {
